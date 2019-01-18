@@ -18,7 +18,7 @@ public class HelloTest {
 	@BeforeTest
 	public void beforeTest() {
 		
-		System.setProperty("webdriver.gecko.driver","C:\\resources\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver","resources\\geckodriver.exe");
 		driver = new FirefoxDriver();
 		driver.get("http://demoaut.com");
 		driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
